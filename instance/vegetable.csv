@@ -1,0 +1,6 @@
+Vegetable,name,image,price,description,type,rating
+1,Parsely,img/Vegetable/vegetable-item-3.jpg,21.0,Accha hai,vegetable,5
+2,Bell Papper,img/Vegetable/vegetable-item-4.jpg,21.0,Accha hai,vegetable,4
+3,Potatoes,img/Vegetable/vegetable-item-5.jpg,21.0,Accha hai,vegetable,4
+4,Broccoli,img/Vegetable/vegetable-item-2.jpg,21.0,Accha hai,vegetable,3
+5,Tomato,img/Vegetable/vegetable-item-1.jpg,21.0,Accha hai,vegetable,4

@@ -1,0 +1,55 @@
+{% include 'header.html' %}
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Search</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="{{url_for('main.index')}}">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Search</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <!-- Cart Page Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="table-responsive">
+                                            
+                            <div class="col-lg-9">
+                                <div class="row g-4 justify-content-center">
+                                    {% for product in searched_items  %}
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                         <div class="rounded position-relative fruite-item">
+                                             <div class="fruite-img">
+                                                 <img src="{{url_for('static', filename=product.image)}}" class="img-fluid w-100 rounded-top" alt="">
+                                             </div>
+                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">{{product.type}}</div>
+                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                 <h4>{{product.name}}</h4>
+                                                 <p>{{product.description}}</p>
+                                                 <div class="d-flex justify-content-between flex-lg-wrap">
+                                                     <p class="text-dark fs-5 fw-bold mb-0"> ₹{{product.price}}/ kg</p>
+                                                     <a href="{{url_for('main.addtocart' , type = product.type , id= product.id)}}" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                      {% endfor %}                                  
+                            
+                                </div>
+                            </div>
+
+                        </tbody>
+                    </table>
+                </div>
+        
+
+
+            </div>
+        </div>
+
+                <!-- cart ends here -->
+{% include 'footer.html' %}

@@ -1,0 +1,17 @@
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <u class=flashes>                     # delete ul to remove dot
+    {% for message in messages %}
+      {{ message }}
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<form action="{{url_for('main.login')}}" ,  method="post">
+    <input type="email" name="email" id="">
+    <input type="password" name="password" id="">
+    <input type="submit" , value="login">
+</form>
+
+<!-- <button onclick="{{url_for('main.logout')}}">logout</button> -->
+
+<a href="{{ url_for('main.logout') }}" type="button" style="display: block; width: 115px; height: 25px; background: #4E9CAF; padding: 10px; text-align: center; border-radius: 5px; color: white; font-weight: bold; line-height: 25px;">logout</a>

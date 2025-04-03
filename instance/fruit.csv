@@ -1,0 +1,7 @@
+Fruit,name,image,price,description,type,rating
+1,Orange,img/Fruit/fruite-item-1.jpg,21.0,Accha hai,fruit,5
+2,Raspberries,img/Fruit/fruite-item-2.jpg,21.0,Accha hai,fruit,4
+3,Grapes,img/Fruit/fruite-item-5.jpg,21.0,Accha hai,fruit,3
+4,Apple,img/Fruit/fruite-item-6.jpg,21.0,Accha hai,fruit,5
+5,Apricots,img/Fruit/fruite-item-4.jpg,21.0,Accha hai,fruit,3
+6,Banana,img/Fruit/fruite-item-3.jpg,21.0,Accha hai,fruit,4
